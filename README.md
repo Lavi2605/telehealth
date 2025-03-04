@@ -64,7 +64,7 @@ telehealth-project/
 
 ## Contributors
 - **Daddy's Coding**
-- Contact: [teamdaddy@gmail.com]
+- Contact: [lavi26052005@gmail.com]
 
 ## License
 This project is licensed under the Team Daddy's License - see the [LICENSE](LICENSE) file for details.

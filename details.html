@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter Details - Telehealth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Telehealth</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="video-consultation.html">Video Consultation</a></li>
+        <li><a href="medical-reports.html">Medical Reports</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="details-form-section">
+    <h2>Enter Your Health Details</h2>
+    <form id="details-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="symptoms">Symptoms (comma-separated):</label>
+      <input type="text" id="symptoms" required placeholder="fever, cough, headache">
+
+      <button type="submit">Get Health Advice</button>
+    </form>
+
+    <section id="health-advice">
+      <h3>Health Advice</h3>
+      <p>Please enter your details to get personalized health advice.</p>
+    </section>
+  </section>
+<!-- Add this somewhere in your HTML body (preferably at the end of the body) -->
+<div id="helix-container">
+  <div class="helix"></div>
+</div>
+  <footer>
+    <p>&copy; 2025 Telehealth. All rights reserved by Team Daddy.</p>
+  </footer>
+
+  <script src="advice.js"></script>
+</body>
+</html>

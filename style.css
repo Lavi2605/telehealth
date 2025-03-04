@@ -1,0 +1,444 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7fb;
+}
+
+/* Header */
+header {
+    background: #0072ff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background 0.3s ease;
+}
+
+header:hover {
+    background: #005bb5;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #00c6ff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideUp 1.5s ease-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    animation: slideUp 1.5s ease-out;
+    animation-delay: 0.5s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Service Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    animation: fadeIn 1s ease-out;
+}
+
+.service-box {
+    display: inline-block;
+    background: white;
+    width: 30%;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.service-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Doctor Cards */
+.doctor-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+.doctor-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.doctor-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.doctor-card p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Button Styles */
+button {
+    background-color: #0072ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #00c6ff;
+    transform: scale(1.05);
+}
+
+/* Form Inputs */
+input[type="file"], input[type="date"], input[type="time"], input[type="number"], input[type="text"], select, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:hover, input[type="date"]:hover, input[type="time"]:hover, input[type="number"]:hover, input[type="text"]:hover, select:hover {
+    border-color: #0072ff;
+}
+
+textarea {
+    height: 150px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+textarea:focus, input[type="file"]:focus, input[type="date"]:focus, input[type="time"]:focus {
+    border-color: #0072ff;
+    outline: none;
+}
+
+/* Enter Details Section */
+.enter-details {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #0072ff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select, textarea {
+    font-size: 1rem;
+}
+
+.submit-btn {
+    background-color: #0072ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #00c6ff;
+    transform: scale(1.05);
+}
+
+/* Recommendations Section */
+.recommendations {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.recommendations h3 {
+    font-size: 1.8rem;
+    color: #0072ff;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .service-box {
+        width: 45%;
+    }
+
+    .doctor-card {
+        width: 45%;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .enter-details {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-box {
+        width: 100%;
+    }
+
+    .doctor-card {
+        width: 100%;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+/* Step 1: Create the DNA helix animation */
+
+@keyframes helixAnimation {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(720deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(1440deg);
+    opacity: 0;
+  }
+}
+
+/* Step 2: Style the helix container */
+#helix-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: none; /* Hidden by default */
+  animation: helixAnimation 3s ease-out forwards;
+}
+
+/* Step 3: DNA helix appearance (make it look like a spiral or circle animation) */
+.helix {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-top-color: #00f; /* Blue color for the helix line */
+  border-radius: 50%;
+  animation: rotateHelix 3s infinite linear;
+}
+
+@keyframes rotateHelix {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Step 1: Create the DNA helix animation */
+
+@keyframes helixAnimation {
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: rotate(720deg);
+      opacity: 0.8;
+    }
+    100% {
+      transform: rotate(1440deg);
+      opacity: 0;
+    }
+  }
+  
+  /* Step 2: Style the helix container */
+  #helix-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: none; /* Hidden by default */
+    animation: helixAnimation 3s ease-out forwards;
+  }
+  
+  /* Step 3: DNA helix appearance (make it look like a spiral or circle animation) */
+  .helix {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-top-color: #00f; /* Blue color for the helix line */
+    border-radius: 50%;
+    animation: rotateHelix 3s infinite linear;
+  }
+  
+  @keyframes rotateHelix {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

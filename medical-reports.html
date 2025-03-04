@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Reports - Telehealth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Telehealth</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="video-consultation.html">Video Consultation</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="upload-report">
+    <h2>Upload Your Medical Report</h2>
+
+    <!-- Dropdown to select the doctor -->
+    <label for="doctor-select">Choose a doctor:</label>
+    <select id="doctor-select">
+      <option value="">Select a Doctor</option>
+      <option value="Alice Johnson">Dr. Alice Johnson (Cardiologist)</option>
+      <option value="Robert Smith">Dr. Robert Smith (General Physician)</option>
+      <option value="Emily Davis">Dr. Emily Davis (Pediatrician)</option>
+      <option value="Lavish Sharma">Dr. Lavish (Orthopedic)</option>
+    </select>
+
+    <!-- File upload -->
+    <input type="file" id="file-upload" accept=".pdf,.doc,.jpg,.png">
+    
+    <!-- Button to share the report -->
+    <button id="share-report-btn" disabled>Share with Doctor</button>
+    <p>Upload your medical report to share with your healthcare provider.</p>
+
+    <!-- List of shared reports -->
+    <section id="shared-reports">
+      <h3>Uploaded Reports</h3>
+      <ul id="reports-list">
+        <!-- List of reports will appear here -->
+      </ul>
+    </section>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Telehealth. All rights reserved by Team Daddy.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

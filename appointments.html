@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointments - Telehealth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Telehealth</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="video-consultation.html">Video Consultation</a></li>
+        <li><a href="medical-reports.html">Medical Reports</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Appointment Booking Section -->
+  <section class="appointment-booking">
+    <h2>Book an Appointment</h2>
+
+    <form id="appointment-form">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Gmail ID:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="appointment-date">Select Date:</label>
+        <input type="date" id="appointment-date" name="appointment-date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="appointment-time">Select Time:</label>
+        <input type="time" id="appointment-time" name="appointment-time" required>
+      </div>
+
+      <button type="submit">Book Appointment</button>
+    </form>
+
+    <p id="appointment-status"></p>
+
+    <h3>Existing Appointments</h3>
+    <ul id="appointments-list">
+      <!-- Existing appointments will be displayed here -->
+    </ul>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Telehealth. All rights reserved by Team Daddy.</p>
+  </footer>
+
+  <script src="appointments.js"></script>
+</body>
+</html>

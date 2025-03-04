@@ -63,7 +63,7 @@ telehealth-project/
 [![Watch the Video](Enclosed in the github Repositary)]
 
 ## Contributors
-- **Team Daddy's**
+- **Daddy's Coding**
 - Contact: [teamdaddy@gmail.com]
 
 ## License

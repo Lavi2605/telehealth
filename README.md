@@ -60,10 +60,10 @@ telehealth-project/
 ```
 
 ## Demo Video
-[![Watch the Video](Enclosed in the github Repositary)]
+[![Watch the Video](at https://drive.google.com/file/d/1R2R3yjjluOPuSiTQ_BrXpN2iocoXVoKY/view?usp=sharing)]
 
 ## Contributors
-- **Daddy's Coding**
+- **Hackoholic's**
 - Contact: [lavi26052005@gmail.com]
 
 ## License
